@@ -1,0 +1,40 @@
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\bin\Debug\net8.0\SeleniumBot.exe
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\bin\Debug\net8.0\SeleniumBot.deps.json
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\bin\Debug\net8.0\SeleniumBot.runtimeconfig.json
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\bin\Debug\net8.0\SeleniumBot.dll
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\bin\Debug\net8.0\SeleniumBot.pdb
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\bin\Debug\net8.0\WebDriver.Support.dll
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\bin\Debug\net8.0\WebDriver.dll
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.csproj.AssemblyReference.cache
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.AssemblyInfoInputs.cache
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.AssemblyInfo.cs
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.csproj.CoreCompileInputs.cache
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\obj\Debug\net8.0\Selenium.143D181B.Up2Date
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.dll
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\obj\Debug\net8.0\refint\SeleniumBot.dll
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.pdb
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.genruntimeconfig.cache
+C:\Users\DEV\Desktop\seleniumTest\SeleniumBot\SeleniumBot\obj\Debug\net8.0\ref\SeleniumBot.dll
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\bin\Debug\net8.0\SeleniumBot.exe
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\bin\Debug\net8.0\SeleniumBot.deps.json
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\bin\Debug\net8.0\SeleniumBot.runtimeconfig.json
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\bin\Debug\net8.0\SeleniumBot.dll
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\bin\Debug\net8.0\SeleniumBot.pdb
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\bin\Debug\net8.0\WebDriver.Support.dll
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\bin\Debug\net8.0\WebDriver.dll
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.csproj.AssemblyReference.cache
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.AssemblyInfoInputs.cache
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.AssemblyInfo.cs
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.csproj.CoreCompileInputs.cache
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\Selenium.143D181B.Up2Date
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.dll
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\refint\SeleniumBot.dll
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.pdb
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.genruntimeconfig.cache
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\ref\SeleniumBot.dll
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\bin\Debug\net8.0\Newtonsoft.Json.dll
