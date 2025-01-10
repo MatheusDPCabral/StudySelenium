@@ -152,11 +152,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DEV\\Desktop\\Nova pasta\\SeleniumBot\\SeleniumBot\\SeleniumBot.csproj",
+      "projectUniqueName": "C:\\Users\\DEV\\Desktop\\seleniumBot\\SeleniumBot\\SeleniumBot\\SeleniumBot.csproj",
       "projectName": "SeleniumBot",
-      "projectPath": "C:\\Users\\DEV\\Desktop\\Nova pasta\\SeleniumBot\\SeleniumBot\\SeleniumBot.csproj",
+      "projectPath": "C:\\Users\\DEV\\Desktop\\seleniumBot\\SeleniumBot\\SeleniumBot\\SeleniumBot.csproj",
       "packagesPath": "C:\\Users\\DEV\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DEV\\Desktop\\Nova pasta\\SeleniumBot\\SeleniumBot\\obj\\",
+      "outputPath": "C:\\Users\\DEV\\Desktop\\seleniumBot\\SeleniumBot\\SeleniumBot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

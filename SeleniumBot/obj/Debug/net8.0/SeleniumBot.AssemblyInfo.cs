@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SeleniumBot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b4d15fc22b0fa5cea50b48da2ecdc0daa2be859")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3b5c76f3f44b8d8d03c19aaed38c0b399eae9ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("SeleniumBot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SeleniumBot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

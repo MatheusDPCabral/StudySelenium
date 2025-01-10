@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uJqythraFDQ=",
+  "dgSpecHash": "Angof6/tXIc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\DEV\\Desktop\\Nova pasta\\SeleniumBot\\SeleniumBot\\SeleniumBot.csproj",
+  "projectFilePath": "C:\\Users\\DEV\\Desktop\\seleniumBot\\SeleniumBot\\SeleniumBot\\SeleniumBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DEV\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\DEV\\.nuget\\packages\\selenium.support\\4.4.0\\selenium.support.4.4.0.nupkg.sha512",
