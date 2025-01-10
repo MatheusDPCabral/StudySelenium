@@ -38,3 +38,4 @@ C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\Seleniu
 C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.genruntimeconfig.cache
 C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\ref\SeleniumBot.dll
 C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\DEV\Desktop\Nova pasta\SeleniumBot\SeleniumBot\obj\Debug\net8.0\SeleniumBot.sourcelink.json
