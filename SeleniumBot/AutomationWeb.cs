@@ -63,14 +63,14 @@ public class AutomationWeb
             Console.WriteLine("Site Web não encontrado.");
         }
 
-        // clcia no botão de fazer login
+        // clicia no botão de fazer login
         driver.FindElement(By.XPath("//*[@id=\"buttons\"]/ytd-button-renderer/yt-button-shape/a/yt-touch-feedback-shape/div/div[2]")).Click();
 
-        //verifica se campo de email do logins existe e preenche 
+        /// Verifica o campo de email e preenche
         element = VerificaSeElementoExistePorNome("identifier");
         element.SendKeys("matheusdelpinocabral@gmail.com" + Keys.Enter);
 
-        //preenche campo de senha login
+        // Aguarda o carregamento do campo de senha e preenche
         element = VerificaSeElementoExistePorNome("Passwd");
         element.SendKeys("ma290404" + Keys.Enter);
 
@@ -79,7 +79,7 @@ public class AutomationWeb
         element.SendKeys("tck10" + Keys.Enter);
 
         //entra no canal do tck
-        element = VerificaSeElementoExistePorID("channel-title");
+        element = VerificaSeElementoExistePorId("channel-title");
         element.Click();
 
         // vai na aba de videos
@@ -103,69 +103,61 @@ public class AutomationWeb
         }
     }
 
+
+    // -------------------------------------
+    //               METODOS
+    // -------------------------------------
+
     public IWebElement VerificaSeElementoExistePorXPath(string elementName)
     {
-        int timeoutInSeconds = 10;
         IWebElement element = null;
-        var endTime = DateTime.Now.AddSeconds(timeoutInSeconds);
 
-        while (DateTime.Now < endTime)
+        wait.Until(driver =>
         {
-            try
-            {
-                element = driver.FindElement(By.XPath(elementName));
-                if (element.Displayed && element.Enabled)
-                    return element;
-            }
-            catch (NoSuchElementException)
-            {
-                Thread.Sleep(500); // Aguarda um pouco antes de tentar novamente
-            }
-        }
-        throw new TimeoutException($"Elemento com o nome '{elementName}' não foi encontrado em {timeoutInSeconds} segundos.");
+            element = FindNameNotNull(By.XPath(elementName));
+            return element != null && element.Displayed && element.Enabled;
+        });
+
+        return element;
+
     }
 
-    public IWebElement VerificaSeElementoExistePorID(string elementName)
+    public IWebElement VerificaSeElementoExistePorId(string elementName)
     {
-        int timeoutInSeconds = 10;
         IWebElement element = null;
-        var endTime = DateTime.Now.AddSeconds(timeoutInSeconds);
 
-        while (DateTime.Now < endTime)
+        wait.Until(driver =>
         {
-            try
-            {
-                element = driver.FindElement(By.Id(elementName));
-                if (element.Displayed && element.Enabled)
-                    return element;
-            }
-            catch (NoSuchElementException)
-            {
-                Thread.Sleep(500); // Aguarda um pouco antes de tentar novamente
-            }
-        }
-        throw new TimeoutException($"Elemento com o nome '{elementName}' não foi encontrado em {timeoutInSeconds} segundos.");
+            element = FindNameNotNull(By.Id(elementName));
+            return element != null && element.Displayed && element.Enabled;
+        });
+
+        return element;
     }
 
     public IWebElement VerificaSeElementoExistePorNome(string elementName)
     {
-        int timeoutInSeconds = 10;
         IWebElement element = null;
-        var endTime = DateTime.Now.AddSeconds(timeoutInSeconds);
 
-        while (DateTime.Now < endTime)
-        {
-            try
-            {
-                element = driver.FindElement(By.Name(elementName));
-                if (element.Displayed && element.Enabled)
-                    return element;
-            }
-            catch (NoSuchElementException)
-            {
-                Thread.Sleep(500); // Aguarda um pouco antes de tentar novamente
-            }
-        }
-        throw new TimeoutException($"Elemento com o nome '{elementName}' não foi encontrado em {timeoutInSeconds} segundos.");
+        wait.Until(driver =>
+         {
+             element = FindNameNotNull(By.Name(elementName));
+             return element != null && element.Displayed && element.Enabled;
+         });
+
+        return element;
     }
+
+    public IWebElement FindNameNotNull(By x)
+    {
+        try
+        {
+            return element = driver.FindElement(x);
+        }
+        catch (NoSuchElementException)
+        {
+            return null;
+        }
+    }
+
 }
