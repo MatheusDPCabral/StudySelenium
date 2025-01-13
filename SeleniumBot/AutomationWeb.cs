@@ -45,6 +45,8 @@ public class AutomationWeb
 
     public void EntrandoEmSiteYouTube()
     {
+        driver.Manage().Window.Maximize();
+
         // inicia com o navegador do google aberto
         driver.Navigate().GoToUrl("https://www.google.com");
 
@@ -55,7 +57,8 @@ public class AutomationWeb
         //procura pelo link do youtube e entra no site
         try
         {
-            element = VerificaSeElementoExistePorXPath("//*[@id=\"AkU20\"]/div/div/div/div/div/div/div[1]/div/span/a/h3");
+            //driver.FindElement(By.ClassName("PZPZlf ssJ7i B5dxMb"));
+            element = VerificaSeElementoExistePorXPath("//h3[text()='YouTube']");
             element.Click();
         }
         catch (NoSuchElementException)
@@ -161,3 +164,5 @@ public class AutomationWeb
     }
 
 }
+
+
