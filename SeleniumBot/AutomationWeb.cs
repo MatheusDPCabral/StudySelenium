@@ -14,7 +14,7 @@ public class AutomationWeb
 {
     public IWebDriver driver; // variável de instância
     WebDriverWait wait; // variavel para processo de aguardar 
-    IWebElement element;
+    IWebElement element;  
 
     public AutomationWeb()
     {
@@ -30,6 +30,7 @@ public class AutomationWeb
         driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
     }
+
     public string TestWeb()
     {
         driver.Navigate().GoToUrl("https://www.google.com");
@@ -51,59 +52,34 @@ public class AutomationWeb
         driver.Navigate().GoToUrl("https://www.google.com");
 
         // procura por youtbe
-        element = VerificaSeElementoExistePorNome("q");
-        element.SendKeys("youtube" + Keys.Enter);
+        TakeElementAndPutValueAndPressEnter(By.Name("q"), "youtube");
 
         //procura pelo link do youtube e entra no site
-        try
-        {
-            //driver.FindElement(By.ClassName("PZPZlf ssJ7i B5dxMb"));
-            element = VerificaSeElementoExistePorXPath("//h3[text()='YouTube']");
-            element.Click();
-        }
-        catch (NoSuchElementException)
-        {
-            Console.WriteLine("Site Web não encontrado.");
-        }
+        TakeAndClickElement(By.XPath("//h3[text()='YouTube']"));
 
         // clicia no botão de fazer login
-        driver.FindElement(By.XPath("//*[@id=\"buttons\"]/ytd-button-renderer/yt-button-shape/a/yt-touch-feedback-shape/div/div[2]")).Click();
+        TakeAndClickElement(By.CssSelector("a[aria-label='Fazer login']"));
 
-        /// Verifica o campo de email e preenche
-        element = VerificaSeElementoExistePorNome("identifier");
-        element.SendKeys("matheusdelpinocabral@gmail.com" + Keys.Enter);
+        // Verifica o campo de email e preenche
+        TakeElementAndPutValueAndPressEnter(By.Name("identifier"), "matheusdelpinocabral@gmail.com");
 
         // Aguarda o carregamento do campo de senha e preenche
-        element = VerificaSeElementoExistePorNome("Passwd");
-        element.SendKeys("ma290404" + Keys.Enter);
+        TakeElementAndPutValueAndPressEnter(By.Name("Passwd"), "ma290404");
 
         //vai na barra de pesquisa e realiza pesquisa 
-        element = VerificaSeElementoExistePorNome("search_query");
-        element.SendKeys("tck10" + Keys.Enter);
+        TakeElementAndPutValueAndPressEnter(By.Name("search_query"), "tck10");
 
         //entra no canal do tck
-        element = VerificaSeElementoExistePorId("channel-title");
-        element.Click();
+        TakeAndClickElement(By.Id("channel-title"));
 
         // vai na aba de videos
-        element = VerificaSeElementoExistePorXPath("//*[@id=\"tabsContent\"]/yt-tab-group-shape/div[1]/yt-tab-shape[2]");
-        element.Click();
+        TakeAndClickElement(By.XPath("//div[contains(@class, 'yt-tab-shape-wiz__tab') and text()='Videos']"));
 
-
-        //clica na live ao vivo
-        element = VerificaSeElementoExistePorXPath("/html/body/ytd-app/div[1]/ytd-page-manager/ytd-browse[2]/ytd-two-column-browse-results-renderer/div[1]/ytd-rich-grid-renderer/div[6]/ytd-rich-item-renderer[10]/div/ytd-rich-grid-media/div[1]/div[3]/div[2]");
-        element.Click();
+        //clica no video desejado
+        TakeAndClickElement(By.XPath("//a[contains(@title, 'ESSES STREAMERS VIRARAM MEUS FREGUESES')]"));
 
         //clica em pular anuncio
-        try
-        {
-            element = VerificaSeElementoExistePorXPath("//*[@id=\"skip-button:2\"]");
-            element.Click();
-        }
-        catch (NoSuchElementException)
-        {
-            Console.WriteLine("Nenhum anúncio para pular.");
-        }
+        TakeAndClickElement(By.XPath("//*[@id=\"skip-button:2\"]"));
     }
 
 
@@ -111,51 +87,17 @@ public class AutomationWeb
     //               METODOS
     // -------------------------------------
 
-    public IWebElement VerificaSeElementoExistePorXPath(string elementName)
+    public IWebElement FindElementNotNull(By by)
     {
-        IWebElement element = null;
-
         wait.Until(driver =>
         {
-            element = FindNameNotNull(By.XPath(elementName));
+            element = driver.FindElement(by);
             return element != null && element.Displayed && element.Enabled;
         });
 
-        return element;
-
-    }
-
-    public IWebElement VerificaSeElementoExistePorId(string elementName)
-    {
-        IWebElement element = null;
-
-        wait.Until(driver =>
-        {
-            element = FindNameNotNull(By.Id(elementName));
-            return element != null && element.Displayed && element.Enabled;
-        });
-
-        return element;
-    }
-
-    public IWebElement VerificaSeElementoExistePorNome(string elementName)
-    {
-        IWebElement element = null;
-
-        wait.Until(driver =>
-         {
-             element = FindNameNotNull(By.Name(elementName));
-             return element != null && element.Displayed && element.Enabled;
-         });
-
-        return element;
-    }
-
-    public IWebElement FindNameNotNull(By x)
-    {
         try
         {
-            return element = driver.FindElement(x);
+            return element;
         }
         catch (NoSuchElementException)
         {
@@ -163,6 +105,15 @@ public class AutomationWeb
         }
     }
 
+    public void TakeAndClickElement(By by)
+    {
+        element = FindElementNotNull(by);
+        element.Click();
+    }
+
+    public void TakeElementAndPutValueAndPressEnter(By by, string value)
+    {
+        element = FindElementNotNull(by);
+        element.SendKeys(value + Keys.Enter);
+    }
 }
-
-
