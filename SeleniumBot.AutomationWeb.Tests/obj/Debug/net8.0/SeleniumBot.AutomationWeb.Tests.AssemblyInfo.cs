@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SeleniumBot.AutomationWeb.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7be41b8511141a8a3c8019b89466a12288d68ddc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eced85453a76491dab4634e3ab81d61282f6cd00")]
 [assembly: System.Reflection.AssemblyProductAttribute("SeleniumBot.AutomationWeb.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SeleniumBot.AutomationWeb.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
